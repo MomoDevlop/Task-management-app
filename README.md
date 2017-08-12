@@ -1,31 +1,29 @@
 # Task-management-app
-##Description:
+## Description:
 
 This app is a Full Stack Java Script App and also a CRUD Web Application, which helps to schedule,assign,plan and manage the tasks.
 
-##Tech stack:
+## Tech stack:
 
-###Front-end
-
+### Front-end
 HTML5, CSS3
 Javascript, ES6
 
-###Back-end
+### Back-end
 Template engine : Embedded js(ejs)
 Express, Node.js
 
-###Database
-
+### Database
 MongoDB hosted on AWS by mlab
 mLab is MongoDB hosting platform that provides cloud Database-as-a-Service
 
-###Client-server communication / Web services
+### Client-server communication protocol / Web services
 RESTFUL API
 JSON , CRUD Operations
 
-###Deployment
+### Deployment
 Heroku
 version control system : GIT
 
-##NOTE :
+## NOTE :
 This app is in progress and working on some cross-browser issues!!
