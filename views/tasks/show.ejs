@@ -39,12 +39,12 @@
           <tr>
             <td>Start Date</td>
             <td>:</td>
-            <td><%= moment.utc(task.startDate).add(1,"day").format("MM-DD-YYYY")%></td>
+            <td><%= moment.utc(task.startDate).format("MM-DD-YYYY")%></td>
           </tr>
           <tr>
             <td>End Date</td>
             <td>:</td>
-            <td><%= moment.utc(task.endDate).add(1,"day").format("MM-DD-YYYY")%></td>
+            <td><%= moment.utc(task.endDate).format("MM-DD-YYYY")%></td>
           </tr>
 
           <tr>

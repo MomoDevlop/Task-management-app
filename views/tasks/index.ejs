@@ -31,8 +31,8 @@
               <td><a href="/tasks/show/<%= tasks[i]._id%>"><%= tasks[i].title%></a></td>
               <td ><%= tasks[i].description%></td>
               <td><%= tasks[i].assignee%></td>
-              <td><%= moment.utc(tasks[i].startDate).add(1,"day").format("MM-DD-YYYY") %></td>
-              <td><%= moment.utc(tasks[i].endDate).add(1,"day").format("MM-DD-YYYY")%></td>
+              <td><%= moment.utc(tasks[i].startDate).format("MM-DD-YYYY") %></td>
+              <td><%= moment.utc(tasks[i].endDate).format("MM-DD-YYYY")%></td>
               <td><%= tasks[i].status%></td>
             </tr>
           <% } %>
