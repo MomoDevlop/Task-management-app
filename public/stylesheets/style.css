@@ -79,8 +79,8 @@ footer {
    bottom:0px;
    height:30px;
    width:100%;
-   background:#9FF;
-   color: #000;
+   background-color: #0080ff;
+   color: white;
    text-align: right;
     padding: 10px 25px;
 }
@@ -90,13 +90,32 @@ textarea {
 }
 #backButton {
   border: solid 1px grey;
-  background-color: "grey";
+  background-color: grey;
   border-radius: 6px;
   text-transform: uppercase;
   color: #000;
   margin: 10px 0;
   font-weight: bold;
   padding: 10px 20px;
+}
+
+#backButton {
+  border: solid 1px grey;
+  background-color: white;
+  border-radius: 6px;
+  text-transform: uppercase;
+  color: blue;
+  margin: 10px 0;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+#backButton:hover{
+  background-color: black;
+  color:white;
+}
+#delButton:hover{
+  background-color: red;
+  color: white;
 }
 #createButton {
   border: solid 1px #AABF5C;
@@ -106,4 +125,19 @@ textarea {
   color: #FFFFFF;
   margin: 10px 0;
   padding: 10px 20px;
+}
+h1 {
+ font-size: 36px;
+ line-height: 70px;
+ margin:0;
+ font-weight: normal;
+ width:100%;
+ font-family: 'Hammersmith One', sans-serif;
+ text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+ position: fixed;
+ top:0px;
+ right:0px;
+ color: white;
+ text-align:center;
+ background-color: #0080ff;
 }

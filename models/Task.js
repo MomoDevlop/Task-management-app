@@ -15,15 +15,15 @@ let TaskSchema = new mongoose.Schema({
     },
     actionPlan:{
       type: String,
-      required:true
+      default:'Do the first things first'
     },
     startDate: {
       type:Date,
-      required: true
+      default:Date.now
     },
     endDate: {
        type: Date,
-       required: true
+      default:Date.now
     },
     status: {
      type: String,
@@ -31,7 +31,7 @@ let TaskSchema = new mongoose.Schema({
     },
     retrospective: {
       type: String,
-       required:true
+       default:'keep on improving'
     }
 
 });

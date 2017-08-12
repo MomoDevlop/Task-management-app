@@ -6,8 +6,8 @@
   </head>
   <body>
     <div class="container">
-      <h3><a href="/tasks">Task List</a></h3>
-      <h1>Task details</h1>
+
+      <h2>Task details</h2>
       <table>
         <tbody>
           <tr>
@@ -52,13 +52,19 @@
               <td>:</td>
             <td><%=task.retrospective %></td>
           </tr>
+          <tr>
+            <td colspan="1"><button onclick="location.href='/tasks/edit/<%= task._id%>';">Edit</button></td>
+            <td colspan="1"><button onclick="location.href='/tasks';">Tasks</button></td>
+            <td>
+
+            </td>
+          </tr>
         </tbody>
       </table>
-      <h3><a href="/tasks/edit/<%= task._id%>">EDIT</a></h3>
+
       <form action="/tasks/delete/<%= task._id%>" method="post">
-        <button type="submit">DELETE</button>
+        <button type="submit" id="delButton">DELETE</button>
       </form>
-      <button id="backButton" onclick="window.history.back()"> Back </button>
     </div>
   </body>
 </html>

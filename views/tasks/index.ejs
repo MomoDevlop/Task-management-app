@@ -8,10 +8,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div >
-
-    <input type="button" id="createButton" onclick="location.href='/tasks/create';" value="Create Task" />
-      <h1>Tasks : </h1>
+    <h2 >Tasks </h2>
+    <div>
+      <br>
       <% if(tasks.length>0) { %>
       <table class="table table-striped">
         <thead>
@@ -19,8 +18,8 @@
             <th>Task Name</th>
             <th>Description </th>
             <th>Assignee</th>
-            <th>Start Date</th>
-            <th>End Date</th>
+            <th>Start Date(mm-dd-yyyy)</th>
+            <th>End Date(mm-dd-yyyy)</th>
             <th>Status</th>
           </tr>
         </thead>
@@ -41,8 +40,8 @@
       <% } else { %>
         <div>No tasks found.</div>
       <% } %>
-      <button id="backButton" onclick="window.history.back()"> Back </button>
-   <input type="button" id="backButton" onclick="location.href='/';" value="Home Page" />
+    <input type="button" id="createButton" onclick="location.href='/tasks/create';" value="Create Task" />
+    <input type="button" id="createButton" onclick="location.href='/';" value="Home page" />
     </div>
   </body>
 </html>

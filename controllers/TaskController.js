@@ -41,7 +41,7 @@ taskController.save = (req,res) => {
     retrospective:req.body.retrospective
   });
   task.save((err,task) => {
-     if (err) return res.status(500).send("There is a problem in storing the task.Please check that you entered the data in all fields.");
+     if (err) return res.status(500).send("There is a problem in storing the task.Please go back and check that you entered the data in all fields.");
      res.redirect("/tasks/show/"+task._id);
 
   });

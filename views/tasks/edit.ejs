@@ -6,8 +6,8 @@
   </head>
   <body>
     <div class="container">
-      <h3><a href="/tasks">Task List</a></h3>
-      <h1>Edit Task</h1>
+
+      <h2>Edit Task</h2>
       <form action="/tasks/update/<%= task._id%>" method="post">
         <table>
           <tbody>
@@ -33,11 +33,11 @@
             </tr>
 
             <tr>
-              <td>Start Date</td>
+              <td>Start Date(mm-dd-yyyy)</td>
                 <td><input type="date"  name="startDate"  value= "<%=moment.utc(task.startDate).format("YYYY-MM-DD") %>"/></td>
             </tr>
             <tr>
-              <td>End Date</td>
+              <td>End Date(mm-dd-yyyy)</td>
               <td><input type="date"  name="endDate" value="<%=moment.utc(task.endDate).format("YYYY-MM-DD") %>"/></td>
             </tr>
             <tr>
@@ -45,13 +45,15 @@
               <td><textarea name="retrospective" placeholder="please enter + or - points"/><%= task.retrospective %></textarea></td>
             </tr>
             <tr>
-              <td colspan="2"><button type="submit">Update</button></td>
+              <td colspan="1"><button type="submit">Update</button></td>
+              <td colspan="2"><button onclick="location.href='/tasks';">Tasks</button></td>
+              <td colspan="1"><button onclick="location.href='/';">Home</button></td>
             </tr>
 
           </tbody>
         </table>
       </form>
-      <button id="backButton" onclick="window.history.back()"> Back </button>
+
     </div>
   </body>
 </html>
