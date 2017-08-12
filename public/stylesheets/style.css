@@ -77,12 +77,12 @@ footer {
    position:fixed;
    right:0px;
    bottom:0px;
-   height:30px;
+   height:20px;
    width:100%;
    background-color: #0080ff;
    color: white;
    text-align: right;
-    padding: 10px 25px;
+    padding: 10px 20px;
 }
 textarea {
   height:170px ;
