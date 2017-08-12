@@ -34,11 +34,11 @@
 
             <tr>
               <td>Start Date</td>
-                <td><input type="date"  name="startDate"  value= "<%=moment.utc(task.startDate).add(1,"day").format("YYYY-MM-DD") %>"/></td>
+                <td><input type="date"  name="startDate"  value= "<%=moment.utc(task.startDate).format("YYYY-MM-DD") %>"/></td>
             </tr>
             <tr>
               <td>End Date</td>
-              <td><input type="date"  name="endDate" value="<%=moment.utc(task.endDate).add(1,"day").format("YYYY-MM-DD") %>"/></td>
+              <td><input type="date"  name="endDate" value="<%=moment.utc(task.endDate).format("YYYY-MM-DD") %>"/></td>
             </tr>
             <tr>
               <td>Restrospective</td>
