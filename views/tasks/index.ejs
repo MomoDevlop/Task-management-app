@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task List</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div >
+
+    <input type="button" id="createButton" onclick="location.href='/tasks/create';" value="Create Task" />
+      <h1>Tasks : </h1>
+      <% if(tasks.length>0) { %>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Task Name</th>
+            <th>Description </th>
+            <th>Assignee</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <% for(var i=0; i<tasks.length;i++) { %>
+            <tr>
+              <td><a href="/tasks/show/<%= tasks[i]._id%>"><%= tasks[i].title%></a></td>
+              <td ><%= tasks[i].description%></td>
+              <td><%= tasks[i].assignee%></td>
+              <td><%= moment.utc(tasks[i].startDate).add(1,"day").format("MM-DD-YYYY") %></td>
+              <td><%= moment.utc(tasks[i].endDate).add(1,"day").format("MM-DD-YYYY")%></td>
+              <td><%= tasks[i].status%></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+      <% } else { %>
+        <div>No tasks found.</div>
+      <% } %>
+      <button id="backButton" onclick="window.history.back()"> Back </button>
+   <input type="button" id="backButton" onclick="location.href='/';" value="Home Page" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Task</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h3><a href="/tasks">Task List</a></h3>
+      <h1>Edit Task</h1>
+      <form action="/tasks/update/<%= task._id%>" method="post">
+        <table>
+          <tbody>
+            <tr>
+              <td>Title</td>
+              <td><input type="text" name="title" value="<%= task.title %>"/></td>
+            </tr>
+            <tr>
+              <td>Description</td>
+              <td><textarea name="description"><%= task.description %></textarea></td>
+            </tr>
+            <tr>
+              <td>Assignee</td>
+              <td><input type="text" name="assignee"  value="<%= task.assignee %>"/></td>
+            </tr>
+            <tr>
+              <td>Action plan</td>
+              <td><textarea name="actionPlan" placeholder="please enter steps involved"/><%= task.actionPlan %></textarea></td>
+            </tr>
+            <tr>
+              <td>Status</td>
+                <td><input type="text" name="status" placeholder="enter: todo/inProgess/review/done" value="<%= task.status %>"/></td>
+            </tr>
+
+            <tr>
+              <td>Start Date</td>
+                <td><input type="date"  name="startDate"  value= "<%=moment.utc(task.startDate).add(1,"day").format("YYYY-MM-DD") %>"/></td>
+            </tr>
+            <tr>
+              <td>End Date</td>
+              <td><input type="date"  name="endDate" value="<%=moment.utc(task.endDate).add(1,"day").format("YYYY-MM-DD") %>"/></td>
+            </tr>
+            <tr>
+              <td>Restrospective</td>
+              <td><textarea name="retrospective" placeholder="please enter + or - points"/><%= task.retrospective %></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button type="submit">Update</button></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </form>
+      <button id="backButton" onclick="window.history.back()"> Back </button>
+    </div>
+  </body>
+</html>
