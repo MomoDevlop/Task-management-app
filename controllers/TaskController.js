@@ -41,7 +41,7 @@ taskController.save = (req,res) => {
     retrospective:req.body.retrospective
   });
   task.save((err,task) => {
-     if (err) return res.status(500).send('There is a problem storing the task in database, please check that you entered data in all fields');
+     if (err) res.render("../views/tasks/create");
      res.redirect("/tasks/show/"+task._id);
 
   });
@@ -67,7 +67,7 @@ taskController.update = (req,res) => {
                                                   actionPlan:req.body.actionPlan,
                                                   retrospective:req.body.retrospective
                                                  }}, {new:true}, (err, task) => {
-         if (err) return res.status(500).send(err);
+         if (err) res.render("../views/tasks/edit", {task: req.body});
          if (!task) return res.status(404).send("No task found.");
          res.redirect("/tasks/show/"+task._id);
      });
