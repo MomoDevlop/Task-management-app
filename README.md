@@ -6,24 +6,24 @@ This app is a Full Stack Java Script App and also a CRUD Web Application, which 
 ## Tech stack:
 
 ### Front-end
-HTML5, CSS3
-Javascript, ES6
+##### HTML5, CSS3
+##### Javascript, ES6
 
 ### Back-end
-Template engine : Embedded js(ejs)
-Express, Node.js
+##### Template engine : Embedded js(ejs)
+##### Express, Node.js
 
 ### Database
-MongoDB hosted on AWS by mlab
-mLab is MongoDB hosting platform that provides cloud Database-as-a-Service
+##### MongoDB hosted on AWS by mlab
+##### mLab is MongoDB hosting platform that provides cloud Database-as-a-Service
 
 ### Client-server communication protocol / Web services
-RESTFUL API
-JSON , CRUD Operations
+##### RESTFUL API
+##### JSON , CRUD Operations
 
 ### Deployment
-Heroku
-version control system : GIT
+##### Heroku
+##### version control system : GIT
 
 ## NOTE :
-This app is in progress and working on some cross-browser issues!!
+##### This app is in progress and working on some cross-browser issues!!
