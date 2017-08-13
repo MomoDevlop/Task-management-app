@@ -8,7 +8,7 @@
     <div class="container">
 
       <h2>Edit Task</h2>
-      <form action="/tasks/update/<%= task._id%>" method="post">
+      <form action="/tasks/update/<%= task._id%>" method="post" onSubmit="return confirm('Do you really want to update the task ?');">
         <table>
           <tbody>
             <tr>

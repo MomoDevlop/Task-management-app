@@ -62,7 +62,7 @@
         </tbody>
       </table>
 
-      <form action="/tasks/delete/<%= task._id%>" method="post">
+      <form action="/tasks/delete/<%= task._id%>" method="post" onSubmit="return confirm('Do you really want to delete the task ?');" >
         <button type="submit" id="delButton">DELETE</button>
       </form>
     </div>
