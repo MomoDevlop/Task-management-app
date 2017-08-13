@@ -5,9 +5,9 @@ This app is a Full Stack Java Script App and also a CRUD Web Application, which 
 
 ## Tech stack:
 
-* Bullet 1 Front-end
-##### HTML5, CSS3
-##### Javascript, ES6
+### Front-end
+* HTML5, CSS3
+* Javascript, ES6
 
 ### Back-end
 ##### Template engine : Embedded js(ejs)
