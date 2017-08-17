@@ -3,6 +3,7 @@
   <head>
     <title>Create task</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+  
   </head>
   <body>
     <div class="container">
@@ -12,15 +13,15 @@
         <table>
           <tbody>
             <tr>
-              <td>Title</td>
-              <td><input type="text" name="title" placeholder="please enter task name" required/></td>
+              <td>Title <span style="color: red;font-weight:900;">*</span> </td>  
+              <td> <input type="text" name="title" placeholder="please enter task name" required /></td>
             </tr>
             <tr>
-              <td>Description</td>
+              <td>Description <span style="color: red;font-weight:900;">*</span></td>
               <td><textarea name="description" placeholder="please enter short description" required></textarea></td>
             </tr>
             <tr>
-              <td>Assignee</td>
+              <td>Assignee <span style="color: red;font-weight:900;">*</span></td>
               <td><input type="text" name="assignee" placeholder="please enter name of the person" required/></td>
             </tr>
 
@@ -33,11 +34,11 @@
               <td><input type="text" name="status" placeholder="enter: todo/inProgess/review/done" /></td>
             </tr>
             <tr>
-              <td>Start Date</td>
+              <td>Start Date <span style="color: red;font-weight:900;">*</span></td>
                 <td><input type="date" name="startDate"  /></td>
             </tr>
             <tr>
-              <td>End Date</td>
+              <td>End Date <span style="color: red;font-weight:900;">*</span></td>
               <td><input type="date" name="endDate"  /></td>
             </tr>
             <tr>

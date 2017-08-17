@@ -7,12 +7,23 @@ body {
 a {
   color: #00B7FF;
 }
+ul {
+       margin:0;
+       padding:0;
+       text-align: center;
+       list-style:none;                
+     }
+ ul  li {
+          padding: 2px 5px;               
+        }
 
+            
 .container {
   padding: 20px;
   background-color: #efefef;
   width: 600px;
   border-radius: 6px;
+  
 }
 .container h3 a {
   text-decoration: none;
@@ -140,4 +151,10 @@ h1 {
  color: white;
  text-align:center;
  background-color: #0080ff;
+}
+
+h2 {
+
+  color: #0080ff;
+
 }

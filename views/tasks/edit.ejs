@@ -12,15 +12,15 @@
         <table>
           <tbody>
             <tr>
-              <td>Title</td>
+              <td>Title <span style="color: red;font-weight:900;">*</span></td>
               <td><input type="text" name="title" value="<%= task.title %>"/></td>
             </tr>
             <tr>
-              <td>Description</td>
+              <td>Description <span style="color: red;font-weight:900;">*</span></td>
               <td><textarea name="description"><%= task.description %></textarea></td>
             </tr>
             <tr>
-              <td>Assignee</td>
+              <td>Assignee <span style="color: red;font-weight:900;">*</span></td>
               <td><input type="text" name="assignee"  value="<%= task.assignee %>"/></td>
             </tr>
             <tr>
@@ -33,11 +33,11 @@
             </tr>
 
             <tr>
-              <td>Start Date(mm-dd-yyyy)</td>
+              <td>Start Date(mm-dd-yyyy) <span style="color: red;font-weight:900;">*</span></td>
                 <td><input type="date"  name="startDate"  value= "<%=moment.utc(task.startDate).format("YYYY-MM-DD") %>"/></td>
             </tr>
             <tr>
-              <td>End Date(mm-dd-yyyy)</td>
+              <td>End Date(mm-dd-yyyy) <span style="color: red;font-weight:900;">*</span></td>
               <td><input type="date"  name="endDate" value="<%=moment.utc(task.endDate).format("YYYY-MM-DD") %>"/></td>
             </tr>
             <tr>

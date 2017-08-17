@@ -19,11 +19,11 @@ let TaskSchema = new mongoose.Schema({
     },
     startDate: {
       type:Date,
-      default:Date.now
+      required: true
     },
     endDate: {
        type: Date,
-      default:Date.now
+       required: true
     },
     status: {
      type: String,
@@ -31,7 +31,7 @@ let TaskSchema = new mongoose.Schema({
     },
     retrospective: {
       type: String,
-       default:'keep on improving'
+      default:'keep on improving'
     }
 
 });
