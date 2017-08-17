@@ -7,7 +7,7 @@ This app is a Full Stack Java Script App and also a CRUD Web Application, which 
 
 ### Front-end
 * HTML5, CSS3
-* Javascript, ES6
+* ES6
 
 ### Back-end
 * Template engine : Embedded js(ejs)
@@ -23,7 +23,9 @@ This app is a Full Stack Java Script App and also a CRUD Web Application, which 
 
 ### Deployment
 * Heroku
-* version control system : GIT
+
+### Tools
+Atom, SourceTree,cmd, version control system : GIT, 
 
 ## NOTE :
 #### This app is in progress and working on some cross-browser issues!!
