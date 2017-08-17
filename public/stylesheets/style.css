@@ -36,6 +36,7 @@ th, td { width:20px }
 .container h3 a:hover, .container table tr td button:hover {
   background-color: #78F5AE;
   color: #999999;
+  cursor: pointer;
 }
 
 .container table {
@@ -127,6 +128,7 @@ textarea {
 #delButton:hover{
   background-color: red;
   color: white;
+  cursor: pointer;
 }
 #createButton {
   border: solid 1px #AABF5C;
