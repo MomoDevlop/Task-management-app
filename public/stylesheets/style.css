@@ -89,11 +89,12 @@ footer {
    position:fixed;
    right:0px;
    bottom:0px;
+   text-align: right;
    height:20px;
    width:100%;
    background-color: #0080ff;
    color: white;
-   text-align: right;
+   
     padding: 10px 20px;
 }
 textarea {
@@ -124,6 +125,7 @@ textarea {
 #backButton:hover{
   background-color: black;
   color:white;
+  cursor: pointer;
 }
 #delButton:hover{
   background-color: red;
@@ -138,6 +140,7 @@ textarea {
   color: #FFFFFF;
   margin: 10px 0;
   padding: 10px 20px;
+  cursor: pointer;
 }
 h1 {
  font-size: 33px;
